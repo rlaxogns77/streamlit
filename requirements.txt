@@ -12,3 +12,5 @@ regex
 
 # 기타 유틸 패키지 (선택)
 tqdm
+
+scikit-learn
