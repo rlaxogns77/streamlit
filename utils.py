@@ -4,11 +4,11 @@ from openai import AsyncOpenAI, OpenAI
 OPENAI_API_KEY = ""
 
 client = AsyncOpenAI(
-    api_key="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"
+    api_key="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"
 )
 
 sync_client = OpenAI(
-    api_key="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"
+    api_key="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"
 )
 
 
