@@ -12,7 +12,7 @@ sync_client = OpenAI(
 )
 
 
-def llm_call(prompt: str,  model: str = "gpt-4o-mini") -> str:
+def llm_call(prompt: str,  model: str = "gpt-4o") -> str:
     messages = []
     messages.append({"role": "user", "content": prompt})
     chat_completion = sync_client.chat.completions.create(
