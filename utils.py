@@ -1,15 +1,11 @@
 import re
+import os
 from openai import AsyncOpenAI, OpenAI
 
-OPENAI_API_KEY = ""
+OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]  # 🔑 환경변수에서 불러오기
 
-client = AsyncOpenAI(
-    api_key="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"
-)
-
-sync_client = OpenAI(
-    api_key="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"
-)
+client = AsyncOpenAI(api_key=OPENAI_API_KEY)
+sync_client = OpenAI(api_key=OPENAI_API_KEY)
 
 
 def llm_call(prompt: str,  model: str = "gpt-4o-mini") -> str:
