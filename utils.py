@@ -22,7 +22,7 @@ def llm_call(prompt: str,  model: str = "gpt-4o") -> str:
     return chat_completion.choices[0].message.content
 
 
-async def llm_call_async(prompt: str,  model: str = "gpt-4o-mini") -> str:
+async def llm_call_async(prompt: str,  model: str = "gpt-4o") -> str:
     messages = []
     messages.append({"role": "user", "content": prompt})
     chat_completion = await client.chat.completions.create(
