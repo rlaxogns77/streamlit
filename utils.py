@@ -4,7 +4,7 @@ from openai import AsyncOpenAI, OpenAI
 OPENAI_API_KEY = ""
 
 client = AsyncOpenAI(
-    api_key="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"
+    api_key="sk-proj-JHq7fm-lCqRVy02CoArcnIxNyTyLD3WZ-pGxeZ5YOKWFZANSPCMPP6Rc3c9gXPFKMitUPQ48upT3BlbkFJRVPAdbUkgLW1_89qLtEzDToTOb2DveDuzzHiyhOxp6vHrn2HnvKwAJ1BrSdeR-h6MrzAqIHR0Ask-proj-JHq7fm-lCqRVy02CoArcnIxNyTyLD3WZ-pGxeZ5YOKWFZANSPCMPP6Rc3c9gXPFKMitUPQ48upT3BlbkFJRVPAdbUkgLW1_89qLtEzDToTOb2DveDuzzHiyhOxp6vHrn2HnvKwAJ1BrSdeR-h6MrzAqIHR0A"
 )
 
 sync_client = OpenAI(
